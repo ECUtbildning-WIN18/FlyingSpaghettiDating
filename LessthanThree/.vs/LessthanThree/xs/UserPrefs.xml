@@ -1,7 +1,10 @@
 ﻿<Properties StartupConfiguration="{124858FD-9607-4944-9CD0-F73802E88A9C}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="LessthanThree/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="LessthanThree/Domain/Matching.cs">
     <Files>
-      <File FileName="LessthanThree/Program.cs" Line="1" Column="1" />
+      <File FileName="LessthanThree/Program.cs" Line="9" Column="47" />
+      <File FileName="LessthanThree/Domain/Person.cs" Line="1" Column="1" />
+      <File FileName="LessthanThree/Domain/DM.cs" Line="1" Column="1" />
+      <File FileName="LessthanThree/Domain/Matching.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
