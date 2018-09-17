@@ -6,7 +6,13 @@ namespace LessthanThree
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            /* Get basic profile info
+             * Get interests
+             * Create profile
+             * Search for mathes based on profile info
+             * Return matches
+             * Option to message others
+             */
         }
     }
 }

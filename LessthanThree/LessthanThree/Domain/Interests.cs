@@ -3,6 +3,7 @@ namespace LessthanThree.Domain
 {
     public class Interests
     {
+
         public Interests()
         {
         }
