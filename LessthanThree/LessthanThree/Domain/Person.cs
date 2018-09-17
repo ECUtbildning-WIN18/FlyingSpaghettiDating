@@ -3,30 +3,25 @@ namespace LessthanThree.Domain
 {
     public class Person
     {
+        Interests Interests         { get; set; }
+
         public string FirstName     { get; set; }
         public string LastName      { get; set; }
         public int Age              { get; set; }
         public char Gender          { get; set; }
+        public char Orientation     { get; set; }
         public DateTime DateOfBirth { get; set; }
-        public bool StatusSingle    { get; set; }
-        public bool Smoker          { get; set; }
-        public bool HasPets         { get; set; }
-        public bool HasJob          { get; set; }
-        public bool HasEducation    { get; set; }
 
-        public Person(string firstName, string lastName, int age, char gender, DateTime dob,
-                     bool statusSingle, bool smoker, bool hasPets, bool hasJob, bool hasEducation)
+        public Person(string firstName, string lastName, int age, char gender, char orientation, DateTime dob, 
+                      Interests interests)
         {
             FirstName = firstName;
             LastName = lastName;
             Age = age;
             Gender = gender;
+            Orientation = orientation;
             DateOfBirth = dob;
-            StatusSingle = statusSingle;
-            Smoker = smoker;
-            HasPets = hasPets;
-            HasJob = hasJob;
-            HasEducation = hasEducation;
+            Interests = interests;
         }
     }
 }
