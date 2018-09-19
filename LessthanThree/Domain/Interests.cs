@@ -25,312 +25,45 @@ namespace LessthanThree.Domain
 
         //Uses a list that stores true or false values which corrosping to the items above;
         //EG, the List at index 1 corrosponds to a true or false value referring to cats.
-        //Then uses these true or false values to other user's values
-
+        //Then uses these true or false values to other users' values
         public List<bool> InterestList = new List<bool>();
+
+        public string[] WordList =
+        {"like cats", "like dogs", "smoke", "like to travel", "work", "study", "believe in a religion",
+            "drive", "like sports", "like to game", "like music", "like movies", "like TV/series"
+        }; 
+        //This is the word list for the interests we use.
+        //These strings are appended to "Do you" so they make make sense given the interest/context.
 
         int x;
 
         public Interests()
         {
-            Console.WriteLine("Do you like cats? 1-yes 2-no");
-            if (int.TryParse(Console.ReadLine(), out x))
+            foreach (string s in WordList)
             {
-                switch (x) {
-                    case 1:
-                        InterestList.Add(true);
-                        break;
-                    case 2:
-                        InterestList.Add(false);
-                        break;
-                    default:
-                        Console.WriteLine("Invalid input detected, closing program");
-                        Environment.Exit(0);
-                        break;
-                }
-            } else 
-            {
-                Console.WriteLine("Invalid input detected, closing program");
-                Environment.Exit(0);
-            }
-
-            Console.WriteLine("Do you like dogs?? 1-yes 2-no");
-            if (int.TryParse(Console.ReadLine(), out x))
-            {
-                switch (x)
+                Console.WriteLine("\n\tDo you {0}? (1-yes, 2-no)", s);
+                if (int.TryParse(Console.ReadLine(), out x))
                 {
-                    case 1:
-                        InterestList.Add(true);
-                        break;
-                    case 2:
-                        InterestList.Add(false);
-                        break;
-                    default:
-                        Console.WriteLine("Invalid input detected, closing program");
-                        Environment.Exit(0);
-                        break;
+                    switch (x)
+                    {
+                        case 1:
+                            InterestList.Add(true);
+                            break;
+                        case 2:
+                            InterestList.Add(false);
+                            break;
+                        default:
+                            Console.WriteLine("Invalid input detected, closing program");
+                            Environment.Exit(0);
+                            break;
+                    }
                 }
-            }
-            else
-            {
-                Console.WriteLine("Invalid input detected, closing program");
-                Environment.Exit(0);
-            }
-
-            Console.WriteLine("Do you smoke? 1-yes 2-no");
-            if (int.TryParse(Console.ReadLine(), out x))
-            {
-                switch (x)
+                else
                 {
-                    case 1:
-                        InterestList.Add(true);
-                        break;
-                    case 2:
-                        InterestList.Add(false);
-                        break;
-                    default:
-                        Console.WriteLine("Invalid input detected, closing program");
-                        Environment.Exit(0);
-                        break;
+                    Console.WriteLine("Invalid input detected, closing program");
+                    Environment.Exit(0);
                 }
             }
-            else
-            {
-                Console.WriteLine("Invalid input detected, closing program");
-                Environment.Exit(0);
-            }
-
-            Console.WriteLine("Do you like to travel? 1-yes 2-no");
-            if (int.TryParse(Console.ReadLine(), out x))
-            {
-                switch (x)
-                {
-                    case 1:
-                        InterestList.Add(true);
-                        break;
-                    case 2:
-                        InterestList.Add(false);
-                        break;
-                    default:
-                        Console.WriteLine("Invalid input detected, closing program");
-                        Environment.Exit(0);
-                        break;
-                }
-            }
-            else
-            {
-                Console.WriteLine("Invalid input detected, closing program");
-                Environment.Exit(0);
-            }
-
-            Console.WriteLine("Do you work? 1-yes 2-no");
-            if (int.TryParse(Console.ReadLine(), out x))
-            {
-                switch (x)
-                {
-                    case 1:
-                        InterestList.Add(true);
-                        break;
-                    case 2:
-                        InterestList.Add(false);
-                        break;
-                    default:
-                        Console.WriteLine("Invalid input detected, closing program");
-                        Environment.Exit(0);
-                        break;
-                }
-            }
-            else
-            {
-                Console.WriteLine("Invalid input detected, closing program");
-                Environment.Exit(0);
-            }
-
-            Console.WriteLine("Do you like study? 1-yes 2-no");
-            if (int.TryParse(Console.ReadLine(), out x))
-            {
-                switch (x)
-                {
-                    case 1:
-                        InterestList.Add(true);
-                        break;
-                    case 2:
-                        InterestList.Add(false);
-                        break;
-                    default:
-                        Console.WriteLine("Invalid input detected, closing program");
-                        Environment.Exit(0);
-                        break;
-                }
-            }
-            else
-            {
-                Console.WriteLine("Invalid input detected, closing program");
-                Environment.Exit(0);
-            }
-
-            Console.WriteLine("Are you religious? 1-yes 2-no");
-            if (int.TryParse(Console.ReadLine(), out x))
-            {
-                switch (x)
-                {
-                    case 1:
-                        InterestList.Add(true);
-                        break;
-                    case 2:
-                        InterestList.Add(false);
-                        break;
-                    default:
-                        Console.WriteLine("Invalid input detected, closing program");
-                        Environment.Exit(0);
-                        break;
-                }
-            }
-            else
-            {
-                Console.WriteLine("Invalid input detected, closing program");
-                Environment.Exit(0);
-            }
-
-            Console.WriteLine("Do you drive? 1-yes 2-no");
-            if (int.TryParse(Console.ReadLine(), out x))
-            {
-                switch (x)
-                {
-                    case 1:
-                        InterestList.Add(true);
-                        break;
-                    case 2:
-                        InterestList.Add(false);
-                        break;
-                    default:
-                        Console.WriteLine("Invalid input detected, closing program");
-                        Environment.Exit(0);
-                        break;
-                }
-            }
-            else
-            {
-                Console.WriteLine("Invalid input detected, closing program");
-                Environment.Exit(0);
-            }
-
-            Console.WriteLine("Do you like sports? 1-yes 2-no");
-            if (int.TryParse(Console.ReadLine(), out x))
-            {
-                switch (x)
-                {
-                    case 1:
-                        InterestList.Add(true);
-                        break;
-                    case 2:
-                        InterestList.Add(false);
-                        break;
-                    default:
-                        Console.WriteLine("Invalid input detected, closing program");
-                        Environment.Exit(0);
-                        break;
-                }
-            }
-            else
-            {
-                Console.WriteLine("Invalid input detected, closing program");
-                Environment.Exit(0);
-            }
-
-            Console.WriteLine("Do you like games? 1-yes 2-no");
-            if (int.TryParse(Console.ReadLine(), out x))
-            {
-                switch (x)
-                {
-                    case 1:
-                        InterestList.Add(true);
-                        break;
-                    case 2:
-                        InterestList.Add(false);
-                        break;
-                    default:
-                        Console.WriteLine("Invalid input detected, closing program");
-                        Environment.Exit(0);
-                        break;
-                }
-            }
-            else
-            {
-                Console.WriteLine("Invalid input detected, closing program");
-                Environment.Exit(0);
-            }
-
-            Console.WriteLine("Do you like music? 1-yes 2-no");
-            if (int.TryParse(Console.ReadLine(), out x))
-            {
-                switch (x)
-                {
-                    case 1:
-                        InterestList.Add(true);
-                        break;
-                    case 2:
-                        InterestList.Add(false);
-                        break;
-                    default:
-                        Console.WriteLine("Invalid input detected, closing program");
-                        Environment.Exit(0);
-                        break;
-                }
-            }
-            else
-            {
-                Console.WriteLine("Invalid input detected, closing program");
-                Environment.Exit(0);
-            }
-
-            Console.WriteLine("Do you like movies? 1-yes 2-no");
-            if (int.TryParse(Console.ReadLine(), out x))
-            {
-                switch (x)
-                {
-                    case 1:
-                        InterestList.Add(true);
-                        break;
-                    case 2:
-                        InterestList.Add(false);
-                        break;
-                    default:
-                        Console.WriteLine("Invalid input detected, closing program");
-                        Environment.Exit(0);
-                        break;
-                }
-            }
-            else
-            {
-                Console.WriteLine("Invalid input detected, closing program");
-                Environment.Exit(0);
-            }
-
-            Console.WriteLine("Do you like TV/series? 1-yes 2-no");
-            if (int.TryParse(Console.ReadLine(), out x))
-            {
-                switch (x)
-                {
-                    case 1:
-                        InterestList.Add(true);
-                        break;
-                    case 2:
-                        InterestList.Add(false);
-                        break;
-                    default:
-                        Console.WriteLine("Invalid input detected, closing program");
-                        Environment.Exit(0);
-                        break;
-                }
-            }
-            else
-            {
-                Console.WriteLine("Invalid input detected, closing program");
-                Environment.Exit(0);
-            }
-
-
         }
     }
 }

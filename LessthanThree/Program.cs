@@ -26,7 +26,7 @@ namespace LessthanThree
                 Console.WriteLine("\n\t1. Create User" +
                                   "\n\t2. Delete User" +
                                   "\n\t3. List Users" +
-                                  "\n\t4. Match User" +
+                                  "\n\t4. Log in User" +
                                   "\n\t0. Exit");
                 if (int.TryParse(Console.ReadLine(), out int response))
                 {
@@ -61,6 +61,7 @@ namespace LessthanThree
 
         public static void CreatePerson()
         {
+            Console.Clear();
             Console.WriteLine("\n\tWhat is your first name?");
             string name = Console.ReadLine();
             Console.WriteLine("\n\tWhat is your last name?");

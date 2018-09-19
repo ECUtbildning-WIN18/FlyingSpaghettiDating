@@ -3,7 +3,9 @@ namespace LessthanThree.Domain
 {
     public class Person
     {
-        Interests Interests         { get; set; }
+        public Interests Interests         { get; set; }
+
+        public DM Messages;
 
         public string FirstName     { get; set; }
         public string LastName      { get; set; }
@@ -22,6 +24,7 @@ namespace LessthanThree.Domain
             Orientation = orientation;
             DateOfBirth = dob;
             Interests = interests;
+            Messages = new DM();
         }
     }
 }
