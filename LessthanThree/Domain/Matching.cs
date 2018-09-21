@@ -4,8 +4,8 @@ namespace LessthanThree.Domain
 {
     public class Matching
     {
-        private List<Domain.Person> Users { get; set; }
-        private Domain.Person Searcher { get; set; }
+        List<Domain.Person> Users { get; set; }
+        Domain.Person Searcher { get; set; }
 
         public Matching(List<Domain.Person> users, Domain.Person searcher)
         {
@@ -28,7 +28,7 @@ namespace LessthanThree.Domain
                         matchCount++;
                     }
                 }
-                if (matchCount > 5)
+                if (matchCount > 3)
                 {
                     Console.WriteLine("\n\tYou got {0} things in common with {1}!", matchCount, p.FirstName);
                 }
