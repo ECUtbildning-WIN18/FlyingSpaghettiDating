@@ -76,44 +76,11 @@ namespace LessthanThree
 
         public static void CreatePerson()
         {
-            Console.Clear();
-            Console.WriteLine("\n\tWhat is your first name?");
-            string name = Console.ReadLine();
-            Console.WriteLine("\n\tWhat is your last name?");
-            string lname = Console.ReadLine();
-            Console.WriteLine("\n\tHow old are you?");
-            if (!int.TryParse(Console.ReadLine(), out int a))
-            {
-                Console.WriteLine("\n\tPress return to quit application" +
-                                  "\n\tYou probably entered a wrong format somewhere..");
-                Console.ReadLine();
-                Environment.Exit(0);
-            }
-            Console.WriteLine("\n\tWhat is your gender? m-MALE f-FEMALE");
-            if (!char.TryParse(Console.ReadLine(), out char g))
-            {
-                Console.WriteLine("\n\tPress return to quit application" +
-                                  "\n\tYou probably entered a wrong format somewhere..");
-                Console.ReadLine();
-                Environment.Exit(0);
-            }
-            Console.WriteLine("\n\tWhat is your sexual orientation?  A-HETERO, B-BISEXUAL C-HOMO");
-            if (!char.TryParse(Console.ReadLine(), out char o))
-            {
-                Console.WriteLine("\n\tPress return to quit application" +
-                                  "\n\tYou probably entered a wrong format somewhere..");
-                Console.ReadLine();
-                Environment.Exit(0);
-            }
-            Console.WriteLine("\n\tWhat is your date of birth? YYYY-MM-DD");
-            DateTime dob = DateTime.Parse(Console.ReadLine());
-
-            Domain.Interests i = new Domain.Interests();
-
-            Domain.Person person = new Domain.Person(name, lname, a, g, o, dob, i);
-
-            Users.Add(person);
-            LoggedInUser = person;
+            Domain.Person u = Domain.Person.CreatePerson();
+            Domain.Person newUser = new Domain.Person(u.FirstName, u.LastName, u.Age, 
+                                                      u.Gender, u.Orientation, u.DateOfBirth, u.Interests);
+            Users.Add(newUser);
+            LoggedInUser = newUser;
         }
     }
 }

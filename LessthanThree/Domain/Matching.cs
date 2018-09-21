@@ -15,13 +15,15 @@ namespace LessthanThree.Domain
 
         public void Match()
         {
+            int OriginalPosition = Users.IndexOf(Searcher);
             Users.Remove(Searcher);
             foreach (Person p in Users)
             {
                 int matchCount = 0;
                 for (int x = 0; x < p.Interests.InterestList.Count; x++)
                 {
-                    if (Searcher.Interests.InterestList[x] == p.Interests.InterestList[x])
+                    if (Searcher.Interests.InterestList[x] == p.Interests.InterestList[x] &&
+                        Searcher.Interests.InterestList[x] == true)
                     {
                         matchCount++;
                     }
@@ -32,6 +34,7 @@ namespace LessthanThree.Domain
                 }
                 matchCount = 0;
             }
+            Users.Insert(OriginalPosition, Searcher);
             Console.ReadLine();
         }
     }

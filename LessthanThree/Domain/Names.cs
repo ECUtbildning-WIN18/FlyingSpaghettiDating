@@ -6,6 +6,7 @@ namespace LessthanThree.Domain
     {
         public string[] Forenames;
         public string[] Surnames;
+
         public Names()
         {
             Forenames = File.ReadAllLines(@"Domain/ForenameList.txt");
