@@ -9,6 +9,7 @@ namespace LessthanThree.Domain
         //2 will contain the message
         List<string[]> Inbox;
         List<string[]> Outbox;
+
         public DM()
         {
             Inbox = new List<string[]>();

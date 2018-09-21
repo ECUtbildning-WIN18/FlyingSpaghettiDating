@@ -4,11 +4,35 @@ namespace LessthanThree.Domain
 {
     public class Matching
     {
+        private List<Domain.Person> Users { get; set; }
+        private Domain.Person Searcher { get; set; }
 
-
-        public Matching()
+        public Matching(List<Domain.Person> users, Domain.Person searcher)
         {
-            
+            Users = users;
+            Searcher = searcher;
+        }
+
+        public void Match()
+        {
+            Users.Remove(Searcher);
+            foreach (Person p in Users)
+            {
+                int matchCount = 0;
+                for (int x = 0; x < p.Interests.InterestList.Count; x++)
+                {
+                    if (Searcher.Interests.InterestList[x] == p.Interests.InterestList[x])
+                    {
+                        matchCount++;
+                    }
+                }
+                if (matchCount > 5)
+                {
+                    Console.WriteLine("\n\tYou got {0} things in common with {1}!", matchCount, p.FirstName);
+                }
+                matchCount = 0;
+            }
+            Console.ReadLine();
         }
     }
 }

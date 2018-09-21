@@ -36,6 +36,7 @@ namespace LessthanThree.Domain
         //These strings are appended to "Do you" so they make make sense given the interest/context.
 
         int x;
+        Random rnd = new Random();
 
         public Interests()
         {
@@ -62,6 +63,23 @@ namespace LessthanThree.Domain
                 {
                     Console.WriteLine("Invalid input detected, closing program");
                     Environment.Exit(0);
+                }
+            }
+        }
+
+        public Interests(int i)//DEBUGGING USE
+        {
+            foreach (string s in WordList)
+            {
+                x = rnd.Next(0, 2);
+                switch (x)
+                {
+                    case 0:
+                        InterestList.Add(true);
+                        break;
+                    case 1:
+                        InterestList.Add(false);
+                        break;
                 }
             }
         }

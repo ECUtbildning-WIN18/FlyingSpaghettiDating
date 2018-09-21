@@ -14,7 +14,23 @@ namespace LessthanThree.Domain
         public char Orientation     { get; set; }
         public DateTime DateOfBirth { get; set; }
 
-        public Person(string firstName, string lastName, int age, char gender, char orientation, DateTime dob, 
+        public Person(Interests i) //DEBUGGING USE
+        {
+            Random rnd = new Random();
+            Names n = new Names();
+            string orientations = "abc";
+            string genders = "mf";
+
+            FirstName = GetRandomName(n.Forenames, rnd);
+            LastName = GetRandomName(n.Surnames, rnd);
+            Age = rnd.Next(18, 60);
+            Gender = GetRandomCharacter(genders, rnd);
+            Orientation = GetRandomCharacter(orientations, rnd);
+            DateOfBirth = DateTime.Now;
+            Interests = i;
+        }
+
+        public Person(string firstName, string lastName, int age, char gender, char orientation, DateTime dob,
                       Interests interests)
         {
             FirstName = firstName;
@@ -25,6 +41,18 @@ namespace LessthanThree.Domain
             DateOfBirth = dob;
             Interests = interests;
             Messages = new DM();
+        }
+
+        public char GetRandomCharacter(string text, Random rng)
+        {
+            int index = rng.Next(text.Length);
+            return text[index];
+        }
+
+        public string GetRandomName(string[] text, Random rng)
+        {
+            int index = rng.Next(text.Length);
+            return text[index];
         }
     }
 }
