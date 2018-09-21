@@ -4,9 +4,9 @@ using System.Text;
 
 namespace LessthanThree.Domain
 {
-    class Profile
+    class Account
     {
-        public void ProfileMenu()
+        public void AccountSeries()
         {
 
         }

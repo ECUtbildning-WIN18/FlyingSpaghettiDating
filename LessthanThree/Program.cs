@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using LessthanThree.Domain;
 
 
 namespace LessthanThree
@@ -8,7 +9,7 @@ namespace LessthanThree
     {
         static void Main(string[] args)
         {
-            
+            Menu.MainMenu();
         }
     }
 }
