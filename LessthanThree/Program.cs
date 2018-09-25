@@ -159,7 +159,7 @@ namespace LessthanThree
                             Console.WriteLine("\n\tHere are your messages!");
                             foreach (string[] messages in LoggedInUser.Messages.Inbox)
                             {
-                                Console.WriteLine(messages[2]);
+                                Console.WriteLine("From: {0},\n{1}", messages[0], messages[2]);
                             }
                         } else 
                         {
@@ -173,7 +173,7 @@ namespace LessthanThree
                             Console.WriteLine("\n\tHere are your sent messages!");
                             foreach (string[] messages in LoggedInUser.Messages.Outbox)
                             {
-                                Console.WriteLine(messages[2]);
+                                Console.WriteLine("To: {0},\n{1}", messages[1], messages[2];
                             }
                         }
                         else
