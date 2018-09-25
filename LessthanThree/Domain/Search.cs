@@ -28,16 +28,16 @@ namespace LessthanThree.Domain
             string searchLn = "";
             string searchUn = "";
 
-            if (searchTerm.Length == 1)
+            if (searchTerm.Length == 2)
             {
                 searchUn = searchTerm[0];
-            } else if (searchTerm.Length > 1)
+            } else if (searchTerm.Length == 1)
             {
                 searchFn = searchTerm[0];
                 searchLn = searchTerm[1];
             } else
             {
-                Console.WriteLine("\n\tYou entered something wrong" +
+                Console.WriteLine("\n\tUser not found." +
                                       "\n\tPlease only enter the first and last name, separated by a space," +
                                       "or ONLY the username, exactly as it is spelled" +
                                       "\n\tReturning to menu, press enter to continue..");
@@ -65,7 +65,7 @@ namespace LessthanThree.Domain
                     break;
                 case 0:
                 default:
-                    Console.WriteLine("\n\tYou entered something wrong" +
+                    Console.WriteLine("\n\tUser not found." +
                                       "\n\tPlease only enter the first and last name, separated by a space," +
                                       "or ONLY the username, exactly as it is spelled" +
                                       "\n\tReturning to menu, press enter to continue..");

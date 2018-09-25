@@ -147,10 +147,6 @@ namespace LessthanThree
                                         break;
                                 }
                             }
-                        } else 
-                        {
-                            Console.WriteLine("\n\tUser not found, try again!");
-                            Console.ReadLine();
                         }
                         break;
                     case 3:

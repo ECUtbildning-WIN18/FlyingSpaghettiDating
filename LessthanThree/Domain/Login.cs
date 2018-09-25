@@ -7,7 +7,7 @@ namespace LessthanThree.Domain
         public static List<Domain.Person> Users { get; set; }
 
         string UserLogin { get; }
-        string UserPassword { get; set; }
+        string UserPassword { get; }
 
         public Login(string userLogin, string userPassword, List<Domain.Person> users)
         {
@@ -27,6 +27,7 @@ namespace LessthanThree.Domain
                 }
             }
             Console.WriteLine("\n\tUser not found!\n\tPress enter to continue..");
+            Console.ReadLine();
             return null;
         }
     }
