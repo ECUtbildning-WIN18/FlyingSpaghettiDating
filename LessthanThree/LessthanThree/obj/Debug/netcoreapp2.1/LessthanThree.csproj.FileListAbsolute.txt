@@ -1,0 +1,11 @@
+/Users/miaz-chan/Workspace/ECutbildning/Grupparbete/LessthanThree/FlyingSpagettiDating/LessthanThree/LessthanThree/obj/Debug/netcoreapp2.1/LessthanThree.csprojAssemblyReference.cache
+/Users/miaz-chan/Workspace/ECutbildning/Grupparbete/LessthanThree/FlyingSpagettiDating/LessthanThree/LessthanThree/obj/Debug/netcoreapp2.1/LessthanThree.csproj.CoreCompileInputs.cache
+/Users/miaz-chan/Workspace/ECutbildning/Grupparbete/LessthanThree/FlyingSpagettiDating/LessthanThree/LessthanThree/obj/Debug/netcoreapp2.1/LessthanThree.AssemblyInfoInputs.cache
+/Users/miaz-chan/Workspace/ECutbildning/Grupparbete/LessthanThree/FlyingSpagettiDating/LessthanThree/LessthanThree/obj/Debug/netcoreapp2.1/LessthanThree.AssemblyInfo.cs
+/Users/miaz-chan/Workspace/ECutbildning/Grupparbete/LessthanThree/FlyingSpagettiDating/LessthanThree/LessthanThree/bin/Debug/netcoreapp2.1/LessthanThree.deps.json
+/Users/miaz-chan/Workspace/ECutbildning/Grupparbete/LessthanThree/FlyingSpagettiDating/LessthanThree/LessthanThree/bin/Debug/netcoreapp2.1/LessthanThree.runtimeconfig.json
+/Users/miaz-chan/Workspace/ECutbildning/Grupparbete/LessthanThree/FlyingSpagettiDating/LessthanThree/LessthanThree/bin/Debug/netcoreapp2.1/LessthanThree.runtimeconfig.dev.json
+/Users/miaz-chan/Workspace/ECutbildning/Grupparbete/LessthanThree/FlyingSpagettiDating/LessthanThree/LessthanThree/bin/Debug/netcoreapp2.1/LessthanThree.dll
+/Users/miaz-chan/Workspace/ECutbildning/Grupparbete/LessthanThree/FlyingSpagettiDating/LessthanThree/LessthanThree/bin/Debug/netcoreapp2.1/LessthanThree.pdb
+/Users/miaz-chan/Workspace/ECutbildning/Grupparbete/LessthanThree/FlyingSpagettiDating/LessthanThree/LessthanThree/obj/Debug/netcoreapp2.1/LessthanThree.dll
+/Users/miaz-chan/Workspace/ECutbildning/Grupparbete/LessthanThree/FlyingSpagettiDating/LessthanThree/LessthanThree/obj/Debug/netcoreapp2.1/LessthanThree.pdb

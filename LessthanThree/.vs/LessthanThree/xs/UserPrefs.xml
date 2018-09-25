@@ -1,11 +1,15 @@
 ﻿<Properties StartupConfiguration="{124858FD-9607-4944-9CD0-F73802E88A9C}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="LessthanThree/Program.cs">
     <Files>
-      <File FileName="LessthanThree/Program.cs" Line="1" Column="1" />
+      <File FileName="LessthanThree/Program.cs" Line="13" Column="29" />
+      <File FileName="LessthanThree/Domain/Person.cs" Line="28" Column="1" />
+      <File FileName="LessthanThree/Domain/DM.cs" Line="8" Column="1" />
+      <File FileName="LessthanThree/Domain/Matching.cs" Line="8" Column="1" />
+      <File FileName="LessthanThree/Domain/Interests.cs" Line="310" Column="53" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.LessthanThree PreferredExecutionTarget="MonoDevelop.Default" FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.LessthanThree PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
