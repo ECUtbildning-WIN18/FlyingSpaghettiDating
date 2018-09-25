@@ -26,7 +26,7 @@ namespace LessthanThree.Domain
             string orientations = "abc";
             string genders = "mf";
 
-            Username = GetRandomUser();
+            Username = GetRandomUser(Program.Users);
             Password = defaultpass;
             FirstName = GetRandomName(n.Forenames, rnd);
             LastName = GetRandomName(n.Surnames, rnd);
@@ -110,12 +110,15 @@ namespace LessthanThree.Domain
             return text[index];
         }
 
-        public string GetRandomUser()
+        public string GetRandomUser(List<Domain.Person> Users)
         {
+            /*
             Random rnd = new Random();
             const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890";
             return new string(Enumerable.Repeat(chars, 8)
               .Select(s => s[rnd.Next(s.Length)]).ToArray());
+            */
+            return string.Concat("User", Users.Count.ToString());
         }
     }
 }
