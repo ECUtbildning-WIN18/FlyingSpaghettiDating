@@ -53,16 +53,15 @@ namespace LessthanThree.Domain
                         case 2:
                             InterestList.Add(false);
                             break;
-                        default:
-                            Console.WriteLine("Invalid input detected, closing program");
-                            Environment.Exit(0);
-                            break;
                     }
                 }
                 else
                 {
-                    Console.WriteLine("Invalid input detected, closing program");
-                    Environment.Exit(0);
+                    Console.WriteLine("\n\tInvalid input detected returning to main menu " +
+                                      "\n\t(All progress up until here is lost!)" +
+                                      "\n\tPress return to continue..");
+                    Console.ReadLine();
+                    break;
                 }
             }
         }
