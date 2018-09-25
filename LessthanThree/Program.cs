@@ -173,7 +173,7 @@ namespace LessthanThree
                             Console.WriteLine("\n\tHere are your sent messages!");
                             foreach (string[] messages in LoggedInUser.Messages.Outbox)
                             {
-                                Console.WriteLine("To: {0},\n{1}", messages[1], messages[2];
+                                Console.WriteLine("To: {0},\n{1}", messages[1], messages[2]);
                             }
                         }
                         else
